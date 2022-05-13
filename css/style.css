@@ -1,0 +1,195 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+body {
+    background-color: rgb(236, 233, 233);
+    font-family: 'Poppins', sans-serif;
+    
+    
+}
+.cont{
+    position: relative;
+    background-color:  hsl(229, 57%, 11%);
+    height: 100vh;
+    
+}
+.cont::before{
+    position: absolute;
+    content: "";
+    background-image: url(../images/bg-desktop.png);
+    height: 100vh;
+    width: 100%;
+    background-size: 1365px 350px;
+    background-position: bottom  center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.item{
+    display: flex;
+    width: 60%;
+    height: 180px;
+    margin: auto;
+    transform: translateY(120%);
+    position: relative;
+}
+.left{
+    border-top-right-radius: 100px;
+    border-top-left-radius:10px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:5px;
+    flex: 1 1 30%;
+    height: 180px;
+    background-color: #1d2c67;
+    align-self: flex-end;
+    margin-left: 20px;
+}
+.right{
+    border-radius: 10px;
+    flex: 1 1 60%;
+    height: 130px;
+    align-self: flex-end;
+}
+.left-items{
+    padding: 30px;
+}
+.left-dow{
+    margin-top: 20px;
+}
+.folder,.upload{
+    margin-left: 10px;
+    border-radius: 10px;
+    padding: 14px 11px;
+    background-color: hsl(229, 57%, 11%);
+}
+.upload{
+    margin-left: 10px;
+    border-radius: 10px;
+    padding: 14px 9.5px;
+    background-color: hsl(229, 57%, 11%);
+}
+.document{
+    border-radius: 10px;
+    padding: 12px 12px;
+    background-color: hsl(229, 57%, 11%);
+}
+.prog-ba{
+    width: 100%;
+    height: 12px;
+    border-radius: 20px;
+    background-color: hsl(229, 57%, 11%);
+
+}
+.prog-fro{
+    width: 80%;
+    height: 12px;
+    border-radius: 20px;
+    background-image: linear-gradient(90deg, #ffa399, #ff4d97);
+}
+.pro-cri{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: white;
+    margin-left: auto;
+}
+.right-cont{
+    padding: 35px;
+}
+.right-cont p{
+    padding-bottom: 10px;
+    color: white;
+}
+.right-dow{
+    padding-top: 5px;
+    font-size: 14px;
+}
+.right-dow{
+    display: flex;
+    justify-content: space-between;
+}
+.divout-con{
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 75%;
+}
+.divout{
+    width: 130px;
+    height: 60px;
+    display: flex;
+    padding: 8px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 30px;
+    background-color: white;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 83% 75%, 50% 75%, 0% 75%);
+}
+/*  */
+.divout-con1{
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 75%;
+}
+.divout1{
+    width: 130px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    padding: 8px;
+    background-color: white;
+}
+
+.span1{
+    font-size: 25px;
+}
+.h1-5{
+    padding-top: 5px;
+}
+.spand{
+    margin-top: 13px;
+    margin-left: 5px;
+}
+@media screen and (max-width:500px){
+    .item{
+        flex-direction: column;
+        width: 78%;
+        transform: translateY(90%);
+    }
+    .left{
+        width: 100%;
+    }
+    .right{
+        margin-top: 20px;
+        border-radius: 10px;
+        align-self: flex-end;
+    }
+    .divout{
+        display: none;
+    }
+    .divout-con1{
+        margin: auto;
+        position: absolute;
+        top: 160%;
+        left: 25%;
+    }
+    .divout1{
+        width: 130px;
+        height: 40px;
+        border-radius: 10px;
+        display: flex;
+        padding: 8px;
+        background-color: white;
+    }
+    .cont::before{
+        position: absolute;
+        content: "";
+        background-image: url(../images/bg-mobile.png);
+        top: 0;
+        bottom: 0;
+        background-size: 60vh 230vw;
+        background-repeat: no-repeat;
+    }
+}
